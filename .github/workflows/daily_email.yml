@@ -28,7 +28,7 @@ jobs:
 
       - name: Send Daily GM Report
         env:
-          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+          GMAIL_PASSWORD: ${{ secrets.GitEmail }}
           GMAIL_USER: safeek.m@solarsquare.in
           REPORT_TO: purushottam.shinde@solarsquare.in,safeek.m@solarsquare.in
         run: python send_daily_report.py
